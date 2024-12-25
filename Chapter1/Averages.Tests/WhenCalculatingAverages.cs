@@ -18,7 +18,7 @@ public sealed class WhenCalculatingAverages
     [TestMethod]
     public void SingleInputShouldProduceValue()
     {
-        string[] inputs = { "1" };
+        string[] inputs = [ "1" ];
         double result = AverageCalculator.ArithmeticMean(inputs);
         Assert.AreEqual(1.0, result, 1e-14);
     }
@@ -26,7 +26,7 @@ public sealed class WhenCalculatingAverages
     [TestMethod]
     public void MultipleInputsShouldProduceAverage()
     {
-        string[] inputs = { "1", "2", "3", };
+        string[] inputs = [ "1", "2", "3", ];
         double result = AverageCalculator.ArithmeticMean(inputs);
         Assert.AreEqual(2.0, result, 1e-14);
 
